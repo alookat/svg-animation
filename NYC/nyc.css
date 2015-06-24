@@ -1,0 +1,35 @@
+#C {
+	height: 100%;
+	stroke-dasharray: 500;
+	 stroke-dashoffset: 500;
+	/*stroke-width: 5;*/
+	-webkit-animation: dash 2s ease-in-out infinite alternate;
+	/*http://cubic-bezier.com/#.17,.67,.83,.67*/
+}
+
+#Y{
+	height: 100%;
+	stroke-dasharray: 500;
+	 stroke-dashoffset: 500;
+	/*stroke-width: 5;*/
+	-webkit-animation: dash 1.75s ease-in-out 0.25s infinite alternate;
+	/*http://cubic-bezier.com/#.17,.67,.83,.67*/
+}
+
+#N {
+	height: 100%;
+	stroke-dasharray: 500;
+	 stroke-dashoffset: 500;
+	/*stroke-width: 5;*/
+	-webkit-animation: dash 1.5s ease-in-out 0.5s infinite alternate;
+	/*http://cubic-bezier.com/#.17,.67,.83,.67*/
+}
+
+@-webkit-keyframes dash {
+	from {
+		stroke-dashoffset: 500;
+	}
+	to {
+		stroke-dashoffset: 0;
+	}
+}

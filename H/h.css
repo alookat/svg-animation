@@ -1,0 +1,17 @@
+#H {
+	height: 100%;
+	stroke-dasharray: 500;
+	 stroke-dashoffset: 500;
+	/*stroke-width: 5;*/
+	-webkit-animation: dash 2s cubic-bezier(.74,.22,.12,.54) 0.3s infinite alternate;
+	/*http://cubic-bezier.com/#.17,.67,.83,.67*/
+}
+
+@-webkit-keyframes dash {
+	from {
+		stroke-dashoffset: 500;
+	}
+	to {
+		stroke-dashoffset: 0;
+	}
+}
